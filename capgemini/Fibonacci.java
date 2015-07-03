@@ -1,4 +1,5 @@
-package com.capgemini.fibonacci;
+package capgemini;
+//package com.capgemini.fibonacci;
 
 /**
  * Created by ldrygala on 2015-01-23.

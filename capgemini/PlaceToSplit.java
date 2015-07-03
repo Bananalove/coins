@@ -1,4 +1,4 @@
-//package com.capgemini.placeToSplit;
+package capgemini;
 
 /**
  * Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
@@ -17,8 +17,9 @@ public final class PlaceToSplit {
 
     public static boolean canBalance(int[] nums) 
     {
-    	if (nums.length == 0)
+    	if (nums.length == 0) // wyjatek moze lepiej??
     	{ 
+    		  System.out.println("length == 0!");
     		return false;
     	}
     	// wyznaczyc indeksy
@@ -26,20 +27,26 @@ public final class PlaceToSplit {
     	int ind2 = nums.length - 1;
     	int suma1 = 0;
     	int suma2 = 0;
-    	while (ind1 != ind2)
+    	//while (ind1 != ind2)
+    	for (int i = 0; i < nums.length; ++i)
     	{
     		if (suma1 < suma2)
     		{
     			suma1 += nums[ind1];
     			++ind1;
+    			  System.out.println("suma1 wynosi: " + suma1);
+    			  System.out.println("ind1 wynosi: " + ind1);
     		}
     		else
     		{
     			suma2 += nums[ind2];
     			--ind2;
+    			 System.out.println("suma2 wynosi: " + suma2);
+    			 System.out.println("ind2 wynosi: " + ind2);
     		}
-    		
     	}
+    
+    	
     	return suma1 == suma2;
     	       
     }

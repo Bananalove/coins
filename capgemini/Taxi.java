@@ -1,3 +1,4 @@
+package capgemini;
 /*Build a module of an application that allows you to find the nearest taxi in a city. 
  * The list of nearest taxi may change depending on the motion of the taxi and on 
  * availability (taxi may be dispatched to other customers). Implement the logic that 

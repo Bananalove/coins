@@ -1,4 +1,5 @@
-package com.capgemini.pascalrectangle;
+package capgemini;
+//package com.capgemini.pascalrectangle;
 
 /**
  * Created by ldrygala on 2015-01-23.
@@ -23,7 +24,7 @@ public class PascalRectangle {
     	if (c > r)
     	{
     		//throw 
-    		System.out.println("niepoprawne argumenty")
+    		System.out.println("niepoprawne argumenty");
     	}
     	
     	

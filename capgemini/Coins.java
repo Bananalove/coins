@@ -1,4 +1,5 @@
-package com.capgemini.coins;
+package capgemini;
+//package com.capgemini.coins;
 
 import java.util.List;
 /**
